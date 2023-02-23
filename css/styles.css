@@ -8,13 +8,33 @@
   --portfolio-btn-color: #404bbf;
   --studio-btn-hover: #404bbf;
 }
-
+/* ----------------styles-reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+/* ----------------/styles-reset */
+
 /* 1 level of text--  #434455; */
 /* 2 level of text--  #2E2F42;  */
 /* color for white text-- #FFFFFF; */

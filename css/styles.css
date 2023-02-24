@@ -47,7 +47,26 @@ body {
 
   background-color: #ffffff;
 }
-/* ----------------style logo  */
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* ----------------(header)style logo  */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   color: var(--title-text-color);
@@ -56,6 +75,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
+  margin-right: 78px;
 }
 .logo-web {
   color: var(--accent-color);
@@ -91,6 +111,23 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
+}
+.site-adres {
+  margin-left: 40px;
+}
+.site-contacts {
+  display: flex;
+  align-items: center;
+}
+.styles-adress {
+  margin-left: auto;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.site-list:not(:last-child) {
+  margin-right: 40px;
 }
 /*---------------- /nav-style */
 

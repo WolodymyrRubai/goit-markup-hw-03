@@ -58,6 +58,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .container-header {
   display: flex;
@@ -134,6 +135,8 @@ body {
 /* ---------------- hero section */
 .hero {
   background-color: var(--title-text-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .visually-hidden {
   position: absolute;
@@ -148,6 +151,11 @@ body {
   width: 1px;
 }
 .hero-title {
+  width: 504px;
+
+  margin-right: auto;
+  margin-left: auto;
+
   color: var(--hero-text-color);
 
   font-weight: 700;
@@ -155,6 +163,7 @@ body {
   line-height: 1.08;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-bottom: 48px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -165,6 +174,14 @@ body {
   background-color: var(--accent-color);
   color: var(--hero-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  margin-left: 480px;
+  /* margin-right: 480px; */
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  border-radius: 4px;
 
   font-weight: 500;
   font-size: 16px;
@@ -180,8 +197,15 @@ body {
 }
 .section-caption {
 }
-.list {
+.sections-list {
+  display: flex;
+
+  gap: 24px;
+  margin: auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .section-items {
 }
 .section-title {
@@ -190,11 +214,13 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .section-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  min-width: 264px;
 }
 /*----------------  /section style */
 /* ---------------- section-2 style */
@@ -208,12 +234,18 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .meta-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 .list {
 }
 .meta-pic {
+  flex-basis: calc((100% - 48px) / 3);
 }
 /* ---------------- /section-2 style */
 /* ---------------- section-3 style */
@@ -228,12 +260,19 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 .team-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 .list {
 }
 .team-pic {
+  flex-basis: calc((100% - 72px) / 4);
 }
 .team-title {
   color: var(--title-text-color);
@@ -242,12 +281,22 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  margin: auto;
+}
+.border-team {
+  background-color: var(--hero-text-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 /* ---------------- /section-3 style */
 /* ---------------- footer section  */
@@ -263,6 +312,8 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 100px;
+  margin-bottom: 16px;
 }
 .footer-text {
   color: var(--text-dark-background);
@@ -270,6 +321,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 100px;
+  width: 268px;
+  margin: 0;
 }
 /* ---------------- /footer section  */
 /* ---------------- PORTFOLIO menu-section */
@@ -281,7 +335,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--hero-text-color);
 }
-.button-all {
+/* .button-all {
   background-color: var(--background-fone);
   color: var(--accent-color);
   border: 1px solid #e7e9fc;
@@ -295,7 +349,7 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   cursor: pointer;
-}
+} */
 .btn:hover,
 .btn:focus {
   background-color: var(--portfolio-btn-color);
@@ -315,6 +369,9 @@ body {
   border-radius: 4px;
   letter-spacing: 0.04em;
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  padding: 12px 24px;
 }
 
 /* ---------------- /PORTFOLIO menu-section */
@@ -331,6 +388,14 @@ body {
   font-size: 16px;
   line-height: 1.5px;
   letter-spacing: 0.02em;
+}
+.list-button {
+  padding-top: 96px;
+  padding-bottom: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
 }
 
 /* ----------------/Section portfolio page  */

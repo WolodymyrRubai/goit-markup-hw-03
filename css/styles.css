@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 0;
 }
 ul,
@@ -151,7 +151,7 @@ body {
   width: 1px;
 }
 .hero-title {
-  width: 504px;
+  width: 496px;
 
   margin-right: auto;
   margin-left: auto;
@@ -163,7 +163,7 @@ body {
   line-height: 1.08;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -175,18 +175,18 @@ body {
   color: var(--hero-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  margin-left: 480px;
-  /* margin-right: 480px; */
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: row;
   align-items: flex-start;
   padding: 16px 32px;
-  gap: 10px;
+
   border-radius: 4px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
+  display: block;
   align-items: center;
   letter-spacing: 0.04em;
   cursor: pointer;
@@ -284,7 +284,7 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 32px;
+
   margin-bottom: 8px;
 }
 .team-text {
@@ -292,7 +292,7 @@ body {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
+
   margin: auto;
 }
 .border-team {
@@ -300,6 +300,7 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  padding: 32px 0;
 }
 /* ---------------- /section-3 style */
 /* ---------------- footer section  */
@@ -325,8 +326,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding-bottom: 100px;
-  width: 268px;
+
   margin: 0;
+}
+.footer-blok {
+  width: 264px;
 }
 /* ---------------- /footer section  */
 /* ---------------- PORTFOLIO menu-section */
@@ -386,8 +390,6 @@ body {
   line-height: 1.2;
 
   letter-spacing: 0.02em;
-  padding-left: 16px;
-  padding-top: 32px;
 
   margin-bottom: 8px;
 }
@@ -395,14 +397,14 @@ body {
   font-weight: 400;
   color: var(--primery-text-color);
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 16px;
-  padding-bottom: 32px;
+
+  margin: 0;
 }
 .list-button {
   padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -422,6 +424,10 @@ body {
 .border-gallery {
   border: 1px solid #e7e9fc;
   border-top: none;
+  padding-left: 16px;
+  padding-bottom: 32px;
+
+  padding-top: 32px;
 }
 .gallery-page {
   flex-basis: calc((100% - 48px) / 3);

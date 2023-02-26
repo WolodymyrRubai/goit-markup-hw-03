@@ -201,13 +201,14 @@ body {
   display: flex;
 
   gap: 24px;
-  width: calc((100% - 72px) / 4);
+
   padding-top: 120px;
   padding-bottom: 120px;
   margin: 0;
 }
 
 .section-items {
+  width: calc((100% - 72px) / 4);
 }
 .section-title {
   color: var(--title-text-color);
@@ -385,12 +386,14 @@ body {
   line-height: 1.2;
 
   letter-spacing: 0.02em;
-
-  padding-top: 32px;
   padding-left: 16px;
+  padding-top: 32px;
+
   margin-bottom: 8px;
 }
 .portfolio-text {
+  font-weight: 400;
+  color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.5px;
   letter-spacing: 0.02em;
@@ -420,9 +423,8 @@ body {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-/* .gallery-page {
+.gallery-page {
   flex-basis: calc((100% - 48px) / 3);
-  padding-bottom: 48px;
-} */
+}
 
 /* ----------------/Section portfolio page  */
